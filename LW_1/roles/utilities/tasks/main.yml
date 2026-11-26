@@ -1,0 +1,10 @@
+---
+- name: Update APT package cache
+  ansible.builtin.apt:
+    update_cache: "{{ utilities_update_cache }}"
+    cache_valid_time: "{{ utilities_cache_valid_time }}"
+
+- name: Install required system utilities
+  ansible.builtin.apt:
+    name: "{{ system_packages }}"
+    state: present

@@ -1,0 +1,17 @@
+---
+utilities_update_cache: true
+utilities_cache_valid_time: 3600
+
+system_packages:
+  - mc
+  - htop
+  - unzip
+  - p7zip-full
+  - git
+  - curl
+  - ncdu
+  - wget
+  - vim
+  - ca-certificates
+  - gnupg
+  - lsb-release

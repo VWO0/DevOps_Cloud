@@ -1,0 +1,22 @@
+
+services:
+  web:
+    build: .
+    image: lr2-web:2.0
+    container_name: lr2_web
+    ports:
+      - "8080:5000"
+    environment:
+      APP_VERSION: "2.0"
+    restart: unless-stopped
+    volumes:
+      - app_data:/data
+    networks:
+      - lr2_network
+
+volumes:
+  app_data:
+
+networks:
+  lr2_network:
+    driver: bridge

@@ -1,0 +1,11 @@
+---
+system_packages:
+  - mc
+  - htop
+  - unzip
+  - p7zip-full
+  - git
+  - curl
+  - ncdu
+
+
